@@ -15,7 +15,6 @@ class PendinggrnController extends Controller
 {
     public function actionIndex(){
         $grn_cnt = new PendingGrn();
-        /*$grn = $grn_cnt->getNewGrnDetails();*/
         $grn = [];
         $pending = $grn_cnt->getPurchaseDetails('pending');
         $approved = $grn_cnt->getPurchaseDetails('approved');
